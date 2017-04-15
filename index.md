@@ -134,5 +134,5 @@ Also include a modal in your template:
 </div>
 ```  
 
-The modal will look like the following image:
---INSERT IMAGE--
+<img src="images/modal.png"/>
+*Figure 2: Modal pop-up before creation*
