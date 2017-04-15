@@ -8,7 +8,7 @@ Django provides a lot of built-in functionality through their generic class-base
 
 
 <img src="images/django_messages.png" align="middle">
-*Django default rendering of form validation errors*
+* Django default rendering of form validation errors *
 
 To enhance the user experience, we can utilize Bootstrap Modals and HTTPResponse Redirects. This tutorial will demonstrate how to detect data duplication, warn the user before he or she submits the form, and redirect the user to an Edit view if they attempt to create a new model with data duplication. The user will then easily be able to update the already existing model, instead of having to find it on their own.
 
