@@ -49,7 +49,7 @@ class DeliveryFeeCreate(CreateView):
     success_url = reverse_lazy('view_delivery_fees')
     ....
 ```
-In the CreateView, create form_valid and form_invalid functions. The form_valid function will create a Delivery Fee, as expected, if there is no Delivery Fee with that invoice number currently exists.
+In the CreateView, create form_valid and form_invalid functions. The ```form_valid``` function will create a Delivery Fee, as expected, if there is no Delivery Fee with that invoice number currently exists.
 
 * views.py  
 ```
@@ -60,7 +60,7 @@ In the CreateView, create form_valid and form_invalid functions. The form_valid 
         ....
 ```
 
-The form_invalid function should first get the invoice number from the form and then check your current models for data duplication. If one currently exists, then get the primary key of that Delivery Fee and redirect the user to the Delivery Fee Update page, passing in the primary key as your argument so you know the exact Delivery Fee to edit.
+The ```form_invalid``` function should first get the invoice number from the form and then check your current models for data duplication. If one currently exists, then get the primary key of that Delivery Fee and redirect the user to the Delivery Fee Update page, passing in the primary key as your argument so you know the exact Delivery Fee to edit.
 * views.py 
 ```
     def form_invalid(self, form):
@@ -137,3 +137,5 @@ Also include a modal in your template:
 <img src="images/modal.PNG"/>
 
 *Figure 2: Modal pop-up before creation*
+
+This concludes the tutorial! You have successfully used Bootstrap Modals and HTTPResponse Redirects to detect data duplication, warn the user before he or she submits the form, and redirect the user to an Edit view if they attempt to create a new model with data duplication.
