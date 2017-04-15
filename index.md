@@ -7,8 +7,8 @@ Preventing data duplication with HTTPResponse Redirects and Bootstrap Modals
 Django provides a lot of built-in functionality through their generic class-based views. One functionality is handling of form validation errors. For example, if a user tries to submit data in a form for a model that duplicates the information contained in an existing model, the Django messaging framework can be used to display a quick and simple error message. However, the error message appears as an unpleasant-looking bulleted list and offers no quick solution to the user. 
 
 
-<img src="images/django_messages.png" align="middle">
-* Django default rendering of form validation errors *
+<img src="images/django_messages.png" align="center">
+*Django default rendering of form validation errors*
 
 To enhance the user experience, we can utilize Bootstrap Modals and HTTPResponse Redirects. This tutorial will demonstrate how to detect data duplication, warn the user before he or she submits the form, and redirect the user to an Edit view if they attempt to create a new model with data duplication. The user will then easily be able to update the already existing model, instead of having to find it on their own.
 
